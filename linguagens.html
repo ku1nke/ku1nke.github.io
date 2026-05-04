@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuzma · Linguagens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">KZM</a>
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="curriculo.html">Currículo</a>
+    <a href="linguagens.html" class="active">Linguagens</a>
+    <a href="trabalho.html">Trabalho</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contactos.html">Contactos</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <p class="page-eyebrow">03</p>
+    <h1 class="page-title">Linguagens de Programação</h1>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Linguagens que domino</div>
+    <div class="card-meta">Nível atual</div>
+
+    <div class="skill-item">
+      <div class="skill-header">
+        <span>HTML 5</span>
+        <span class="skill-level">Nível: Intermédio — 65%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:0" data-width="65%"></div>
+      </div>
+      <p style="margin-top:10px;font-size:0.78rem;color:var(--grey);line-height:1.8">
+        Crio estruturas completas de páginas web: headings, listas, tabelas, formulários,
+        ligações e elementos semânticos (header, main, footer, section, article).
+        Compreendo a hierarquia do DOM e boas práticas de acessibilidade básica.
+      </p>
+    </div>
+
+    <div class="skill-item" style="margin-top:1.8rem">
+      <div class="skill-header">
+        <span>C</span>
+        <span class="skill-level">Nível: Básico — 30%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:0" data-width="30%"></div>
+      </div>
+      <p style="margin-top:10px;font-size:0.78rem;color:var(--grey);line-height:1.8">
+        Trabalho com variáveis, tipos de dados, estruturas condicionais (if/else, switch),
+        ciclos (for, while) e funções. O C ensinou-me a pensar de forma estruturada e a
+        compreender como o computador executa instruções ao nível mais próximo do hardware.
+      </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Linguagens que quero aprender</div>
+    <div class="card-meta">Roadmap pessoal</div>
+
+    <div class="two-col" style="margin-top:0.5rem">
+      <div>
+        <div style="color:var(--white);font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:0.5rem">
+          CSS 3
+        </div>
+        <p style="font-size:0.78rem;color:var(--grey);line-height:1.7">
+          Transformar as minhas páginas HTML em interfaces visualmente atraentes.
+          Layouts com Flexbox e Grid, animações e design responsivo.
+        </p>
+      </div>
+      <div>
+        <div style="color:var(--white);font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:0.5rem">
+          Python
+        </div>
+        <p style="font-size:0.78rem;color:var(--grey);line-height:1.7">
+          Linguagem versátil para automação, análise de dados, IA e desenvolvimento
+          web (Django/Flask). É a próxima grande meta.
+        </p>
+      </div>
+      <div>
+        <div style="color:var(--white);font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:0.5rem">
+          JavaScript
+        </div>
+        <p style="font-size:0.78rem;color:var(--grey);line-height:1.7">
+          Adicionar interatividade às páginas: formulários dinâmicos, animações,
+          APIs e lógica no browser.
+        </p>
+      </div>
+      <div>
+        <div style="color:var(--white);font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;margin-bottom:0.5rem">
+          SQL
+        </div>
+        <p style="font-size:0.78rem;color:var(--grey);line-height:1.7">
+          Consultar e gerir bases de dados — competência essencial em qualquer
+          área do desenvolvimento de software.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>Kuzma</span> · Portfólio Pessoal · <span>2026</span>
+</footer>
+
+<script>
+  /* Animar barras ao carregar a página */
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.skill-fill').forEach(el => {
+      setTimeout(() => { el.style.width = el.dataset.width; }, 200);
+    });
+  });
+</script>
+</body>
+</html>

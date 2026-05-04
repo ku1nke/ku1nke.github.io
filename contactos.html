@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuzma · Contactos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">KZM</a>
+  <div class="nav-links">
+    <a href="index.html">Início</a>
+    <a href="curriculo.html">Currículo</a>
+    <a href="linguagens.html">Linguagens</a>
+    <a href="trabalho.html">Trabalho</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contactos.html" class="active">Contactos</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <p class="page-eyebrow">07</p>
+    <h1 class="page-title">Contactos</h1>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- ESQUERDA: info + mapa -->
+    <div>
+      <div class="contact-info">
+        <div class="contact-line">
+          <span>✉️</span>
+          <a href="kuzmabozhadi@email.com">kuzmabozhadi@email.com</a>
+        </div>
+        <div class="contact-line">
+          <span>🐙</span>
+          <a href="https://github.com/ku1nke" target="_blank">github.com/ku1nke</a>
+        </div>
+        <div class="contact-line">
+          <span>📍</span>
+          <span>Portugal, Lisboa</span>
+        </div>
+      </div>
+
+  </div>
+</main>
+
+<footer>
+  <span>Kuzma</span> · Portfólio Pessoal · <span>2026</span>
+</footer>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const ok = document.getElementById('form-ok');
+    ok.style.display = 'block';
+    this.reset();
+    setTimeout(() => ok.style.display = 'none', 5000);
+  });
+</script>
+</body>
+</html>
